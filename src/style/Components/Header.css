@@ -1,0 +1,12 @@
+.header-container {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    color: #d2dae2;
+}
+
+.header-todo-content {
+    font-style: italic;
+    font-weight: bold;
+    color: #0fbcf9;
+}
