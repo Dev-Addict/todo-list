@@ -1,0 +1,27 @@
+.todo-form-submit {
+    margin: 0;
+    padding: 10px;
+    background-color: #0be881;
+    color: #fff;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: #0be881 solid 2px;
+}
+
+.todo-form-input {
+    background-color: #485460;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: #0be881 solid 2px;
+    width: 50%;
+}
+
+.todo-form-container {
+    text-align: center;
+    margin: 30px;
+}
