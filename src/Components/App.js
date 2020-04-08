@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Header from "./Header";
 import TodoForm from "./TodoForm";
+import TodoList from "./TodoList";
 
 class App extends Component {
     render() {
@@ -9,6 +10,7 @@ class App extends Component {
             <div>
                 <Header/>
                 <TodoForm/>
+                <TodoList/>
             </div>
         );
     }

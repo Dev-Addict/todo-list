@@ -4,7 +4,9 @@ import TodoState from "../model/TodoState";
 export default (state = {}, action) => {
     if (action.type === createTodoActionType) {
         const newState = {...state};
-        newState[new Date().getTime()] = {
+        const id = new Date().getTime();
+        newState[id] = {
+            id,
             title: action.payload,
             state: TodoState.todo
         };
