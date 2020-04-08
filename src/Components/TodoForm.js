@@ -1,7 +1,9 @@
 import React, {Component, createRef} from "react";
 import {Field, reduxForm} from "redux-form";
+import {connect} from "react-redux"
 
 import '../style/Components/TodoForm.css';
+import {createTodo} from "../actions";
 
 export const formName = 'TODO_FORM';
 export const formFields = {
@@ -34,6 +36,7 @@ class TodoForm extends Component {
     }
 
     onSubmit(formValue) {
+        this.props.createTodo(formValue[formFields.title]);
         this.props.reset();
     }
 
@@ -58,7 +61,9 @@ const validate = formValues => {
     return errors;
 };
 
-export default reduxForm({
+const TodoFormWrapped = reduxForm({
     form: formName,
     validate
 })(TodoForm);
+
+export default connect(null, {createTodo})(TodoFormWrapped);
