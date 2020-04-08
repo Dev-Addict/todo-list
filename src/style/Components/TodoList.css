@@ -1,0 +1,35 @@
+.todo-list-container {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d2dae2;
+    font-size: 20px;
+}
+
+.todo-list-todo-content {
+    display: inline;
+}
+
+.todo-list-todo-actions {
+    display: inline;
+    float: right;
+}
+
+.todo-list-todo-delete {
+    display: inline;
+    color: #EA2027;
+}
+
+.todo-list-todo-done {
+    display: inline;
+    color: #009432;
+}
+
+.todo-list-todo-content-done {
+    text-decoration: line-through;
+}
+
+.todo-list-todo-container {
+    margin: 30px;
+}

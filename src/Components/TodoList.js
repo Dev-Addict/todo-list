@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 
 import {deleteTodo, markTodoDone} from "../actions";
 import TodoState from "../model/TodoState";
+import '../style/Components/TodoList.css';
 
 class TodoList extends Component {
     constructor(props) {
@@ -50,7 +51,7 @@ class TodoList extends Component {
 
     render() {
         return (
-            <div>
+            <div className="todo-list-container">
                 {this.renderList()}
             </div>
         );

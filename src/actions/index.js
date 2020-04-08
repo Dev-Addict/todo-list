@@ -2,8 +2,6 @@ import {
     createTodoActionType,
     deleteTodoActionType,
     markTodoDoneActionType,
-    removeInitialValueActionType,
-    setInitialValueActionType
 } from "./types";
 
 export const createTodo = title => {
